@@ -1,29 +1,262 @@
-SkySight Drones
-#servicesServices #portfolioPortfolio #aboutAbout Us #contactContact
-Precision Aerial Solutions
-Elevating your vision with high-resolution photography, detailed surveying, and safe, efficient inspections.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySight Drones - Professional Aerial Services</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            /* Ensure the entire site has the dark background */
+            background-color: #0d1117;
+        }
+        .text-gradient {
+            background-image: linear-gradient(45deg, #10b981, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
 
-#servicesExplore Our Services
-What We Offer
-4K Media Production
-Stunning cinematic footage and high-resolution stills for real estate, events, and marketing campaigns.
+<body class="bg-gray-900 text-gray-100">
 
-Infrastructure Inspection
-Safe and cost-effective inspection of roofs, cell towers, bridges, and solar farms.
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-xl border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-cyan-400">
+                Sky<span class="text-white">Sight</span>
+            </a>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="text-sm font-medium hover:text-cyan-400 transition duration-300">Services</a>
+                <a href="#portfolio" class="text-sm font-medium hover:text-cyan-400 transition duration-300">Portfolio</a>
+                <a href="#about" class="text-sm font-medium hover:text-cyan-400 transition duration-300">About Us</a>
+                <a href="#contact" class="text-sm font-medium hover:text-cyan-400 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Toggle via JS) -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-800 transition duration-300">
+                <!-- SVG Icon for Menu -->
+                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-gray-900 border-t border-gray-800">
+            <a href="#services" class="block py-2 text-sm font-medium rounded-lg hover:bg-gray-800 px-3">Services</a>
+            <a href="#portfolio" class="block py-2 text-sm font-medium rounded-lg hover:bg-gray-800 px-3">Portfolio</a>
+            <a href="#about" class="block py-2 text-sm font-medium rounded-lg hover:bg-gray-800 px-3">About Us</a>
+            <a href="#contact" class="block py-2 text-sm font-medium rounded-lg hover:bg-gray-800 px-3">Contact</a>
+        </div>
+    </header>
 
-Mapping & Surveying
-Generate accurate 3D models, topographical maps, and orthomosaics for construction and agriculture.
+    <!-- Hero Section -->
+    <main>
+        <section class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center overflow-hidden border-b border-gray-800">
+            <!-- Background Image Placeholder (High-tech, abstract drone shot) -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://placehold.co/1920x1080/1f2937/9ca3af?text=Aerial+View');"></div>
+            <!-- Overlay to ensure text readability -->
+            <div class="absolute inset-0 bg-gray-900/60"></div>
 
-Our Work
-Aerial Real Estate Shot
-Aerial Construction Site
-Drone Bridge Inspection
-Drone Cinematic View
-#View Full Gallery
-The SkySight Difference
-Founded by certified pilots and remote sensing experts, SkySight Drones is committed to safety and precision.
+            <div class="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight">
+                    Precision <span class="text-gradient">Aerial Solutions</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 mb-8">
+                    Elevating your vision with high-resolution photography, detailed surveying, and safe, efficient inspections.
+                </p>
+                <a href="#services" class="inline-block px-8 py-3 text-lg font-semibold bg-cyan-600 hover:bg-cyan-500 transition duration-300 rounded-full shadow-lg transform hover:scale-105">
+                    Explore Our Services
+                </a>
+            </div>
+        </section>
 
-FAA Part 107 Certified Pilots
-Comprehensive Insurance Coverage
-Advanced Thermal and LiDAR Technology
-Ready to Start Your Project?
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                What We <span class="text-cyan-400">Offer</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: Photography & Videography -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 hover:border-cyan-500 transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-cyan-400 mb-4">
+                        <!-- Camera Icon SVG -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.865-1.154A2 2 0 0112.559 4h1.882c.48 0 .943.197 1.284.55l.865 1.154a2 2 0 001.664.89H21a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">4K Media Production</h3>
+                    <p class="text-gray-400">Stunning cinematic footage and high-resolution stills for real estate, events, and marketing campaigns. See the world from a new perspective.</p>
+                </div>
+                <!-- Service 2: Infrastructure Inspection -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 hover:border-cyan-500 transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-cyan-400 mb-4">
+                        <!-- Magnifying Glass Icon SVG -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Infrastructure Inspection</h3>
+                    <p class="text-gray-400">Safe and cost-effective inspection of roofs, cell towers, bridges, and solar farms, reducing risk and downtime.</p>
+                </div>
+                <!-- Service 3: Mapping & Surveying -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 hover:border-cyan-500 transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-cyan-400 mb-4">
+                        <!-- Map Icon SVG -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243m.707-1.414L4 18l.707-.707m10.88-10.88L21 6l-1.414.707m-10.88 10.88L3 18l1.414-.707m0 0l-1.414 1.414M12 21V3m-4.5 4.5l4.5-4.5 4.5 4.5"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Mapping & Surveying</h3>
+                    <p class="text-gray-400">Generate accurate 3D models, topographical maps, and orthomosaics for construction, agriculture, and land management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio/Gallery Section -->
+        <section id="portfolio" class="py-16 md:py-24 bg-gray-950 border-y border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-12">
+                    Our <span class="text-cyan-400">Work</span>
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Image Placeholder 1 -->
+                    <div class="rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-[1.02] hover:shadow-cyan-500/50">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Real+Estate" alt="Aerial Real Estate Shot" class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                    <!-- Image Placeholder 2 -->
+                    <div class="rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-[1.02] hover:shadow-cyan-500/50">
+                        <img src="https://placehold.co/600x400/047857/ffffff?text=Construction+Site" alt="Aerial Construction Site" class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                    <!-- Image Placeholder 3 -->
+                    <div class="rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-[1.02] hover:shadow-cyan-500/50">
+                        <img src="https://placehold.co/600x400/9d174d/ffffff?text=Bridge+Inspection" alt="Drone Bridge Inspection" class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                    <!-- Image Placeholder 4 -->
+                    <div class="rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-[1.02] hover:shadow-cyan-500/50">
+                        <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Cinematic+Shot" alt="Drone Cinematic View" class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <button class="px-6 py-2 border border-cyan-500 text-cyan-400 rounded-full hover:bg-cyan-900 transition duration-300">View Full Gallery</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/800x600/171717/737373?text=Drone+Pilot+Profile" alt="Professional Drone Pilot" class="rounded-xl shadow-2xl w-full h-auto object-cover border-4 border-cyan-600/50">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">
+                        The SkySight <span class="text-cyan-400">Difference</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Founded by certified pilots and remote sensing experts, SkySight Drones is committed to safety, compliance, and delivering actionable data. We use state-of-the-art equipment to ensure every project is completed with unmatched precision.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            FAA Part 107 Certified Pilots
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Comprehensive Insurance Coverage
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Advanced Thermal and LiDAR Technology
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-950 border-t border-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-6">
+                    Ready to Start Your <span class="text-cyan-400">Project?</span>
+                </h2>
+                <p class="text-lg text-center text-gray-400 mb-12">
+                    Fill out the form below or call us directly to receive a free, no-obligation quote.
+                </p>
+
+                <form class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                               class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 text-white placeholder-gray-400 transition duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                               class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 text-white placeholder-gray-400 transition duration-200">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-300 mb-2">Service of Interest</label>
+                        <select id="service" name="service"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 text-white transition duration-200 appearance-none">
+                            <option value="">Select a Service...</option>
+                            <option value="photography">4K Media Production</option>
+                            <option value="inspection">Infrastructure Inspection</option>
+                            <option value="surveying">Mapping & Surveying</option>
+                            <option value="other">Other/Custom Project</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Project Details</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 text-white placeholder-gray-400 transition duration-200"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 text-lg font-semibold bg-cyan-600 hover:bg-cyan-500 transition duration-300 rounded-lg shadow-md transform hover:scale-[1.01]">
+                        Request Quote
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:flex md:justify-between md:items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 SkySight Drones. All rights reserved.
+                </p>
+            </div>
+            <div class="flex justify-center md:justify-end space-x-6">
+                <a href="#" class="text-gray-400 hover:text-cyan-400 transition duration-300 text-sm">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400 transition duration-300 text-sm">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('svg');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                // Change icon to 'X' (close)
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+            } else {
+                menu.classList.add('hidden');
+                // Change icon back to 'Menu' (open)
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+                document.getElementById('mobile-menu-button').querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+            });
+        });
+    </script>
+</body>
+</html>
+
